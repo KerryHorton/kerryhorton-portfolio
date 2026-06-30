@@ -1,0 +1,5 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#211A1B"></rect>
+  <text x="200" y="210" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="92" font-weight="700" letter-spacing="1" fill="#F3EFE8">Uber</text>
+  <text x="200" y="262" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="17" letter-spacing="4" fill="#fa8072">RESERVE</text>
+</svg>

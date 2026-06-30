@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#F6C9D9"></rect>
+  <text x="200" y="92" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="15" letter-spacing="3" fill="#8a3a55">CLIENT WORK</text>
+  <text x="200" y="172" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="62" font-weight="700" fill="#5E1B33">Google</text>
+  <text x="200" y="244" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="62" font-weight="700" fill="#211A1B">Chase</text>
+  <line x1="120" y1="282" x2="280" y2="282" stroke="#fa8072" stroke-width="2.5"></line>
+  <text x="200" y="318" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="15" letter-spacing="1.5" fill="#6F6660">+ PrizePicks · Air Canada</text>
+</svg>

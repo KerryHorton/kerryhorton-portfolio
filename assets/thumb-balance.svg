@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#5E1B33"></rect>
+  <text x="200" y="118" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="14" letter-spacing="3" fill="#F2B2C9">INSTALLATION</text>
+  <text x="200" y="216" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="64" font-style="italic" font-weight="700" fill="#F3EFE8">Balance</text>
+  <line x1="150" y1="250" x2="250" y2="250" stroke="#fa8072" stroke-width="2.5"></line>
+  <text x="200" y="294" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="13" letter-spacing="1.5" fill="#F2B2C9">Seattle Design Festival</text>
+</svg>

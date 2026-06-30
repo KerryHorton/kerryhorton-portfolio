@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#2E6B4F"></rect>
+  <text x="200" y="128" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="14" letter-spacing="3" fill="#bfe0cd">AUTOMOTIVE UX</text>
+  <text x="200" y="228" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="62" font-weight="700" fill="#F3EFE8">EcoCAR</text>
+  <circle cx="200" cy="262" r="5" fill="#fa8072"></circle>
+  <text x="200" y="300" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="14" letter-spacing="2" fill="#bfe0cd">UW · GM Mobility</text>
+</svg>

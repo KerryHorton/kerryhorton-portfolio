@@ -1,0 +1,12 @@
+{
+  "name": "kerryportfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "local": "vercel dev",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.7.4"
+  }
+}

@@ -1,0 +1,115 @@
+/* kerry-base.css — shared editorial system for inner pages (Case Study, About).
+   Tokens, cursor, nav, footer, squiggle, buttons. Mirrors the homepage. */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.site {
+  --paper:   #F3EFE8;
+  --paper-2: #ECE6DB;
+  --ink:     #211A1B;
+  --ink-soft:#6F6660;
+  --blush:   #F7CFDD;
+  --pink:    #EE6FA0;
+  --wine:    #5E1B33;
+  --accent:  #fa8072;     /* salmon pink */
+  --accent-ink: #b8442f;  /* darker salmon — passes contrast for small text on cream */
+  --squiggle:#fa8072;
+
+  /* locked styling: Modern typeface */
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Hanken Grotesk', system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+  --display-weight: 400;
+
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap { width: 100%; max-width: 1480px; margin: 0 auto; padding: 0 clamp(22px, 5vw, 88px); }
+
+/* ---- typographic widow/orphan control: never strand a single word on its own line ---- */
+h1, h2, h3, h4, .sub, .roles, .desc, p, li, blockquote { text-wrap: pretty; }
+h1, h2, h3, .display, .ab-cta h2, .brand .word { text-wrap: balance; }
+
+/* ---- NAV ---- */
+.nav { position: relative; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+  padding-top: clamp(22px, 3vw, 38px); padding-bottom: 10px; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
+.brand .word { font-family: var(--font-display); font-weight: var(--display-weight); font-size: 30px; letter-spacing: -.01em; line-height: 1; }
+.brand .star { color: var(--accent); font-family: var(--font-sans); font-weight: 700; }
+.navlinks { display: flex; align-items: center; gap: clamp(18px, 2.4vw, 40px); }
+.navlink { position: relative; text-decoration: none; color: var(--ink);
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; padding-bottom: 6px; }
+.navlink .sq { position: absolute; left: 0; right: 0; bottom: -2px; height: 9px; color: var(--squiggle);
+  opacity: 0; transform: translateY(3px); transition: opacity .25s ease, transform .25s ease; pointer-events: none; }
+.navlink:hover { color: #6e1f3a; }
+.navlink:hover .sq { opacity: 1; transform: translateY(0); }
+.navlink.cta { color: var(--ink-soft); }
+.navlink.active { color: #6e1f3a; }
+
+/* ---- buttons ---- */
+.cta-btn { display: inline-flex; align-items: center; gap: 12px;
+  background: var(--ink); color: var(--paper); text-decoration: none;
+  font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase;
+  padding: 15px 24px; border-radius: 100px; position: relative; z-index: 2; border: none; white-space: nowrap;
+  transition: background .25s ease, transform .25s ease; }
+.cta-btn .arr { transition: transform .3s ease; }
+.cta-btn:hover { background: var(--accent); }
+.cta-btn.ghost { background: transparent; color: var(--ink); border: 1px solid rgba(33,26,27,.28); }
+.cta-btn.ghost:hover { color: var(--accent); border-color: var(--accent); background: transparent; }
+
+/* ---- FOOTER ---- */
+.foot { position: relative; z-index: 10; padding: clamp(80px,11vw,150px) 0 clamp(40px,5vw,72px); }
+.foot .big { font-family: var(--font-display); font-weight: var(--display-weight);
+  font-size: clamp(42px, 8vw, 124px); line-height: .98; letter-spacing: -.02em; margin: 0; max-width: 16ch; }
+.foot .big em { font-style: italic; color: var(--accent); }
+.foot-links { display: flex; gap: clamp(28px,5vw,80px); flex-wrap: wrap; margin-top: clamp(40px,5vw,68px);
+  padding-top: 28px; border-top: 1px solid rgba(33,26,27,.16); }
+.foot-col .lab { font-family: var(--font-mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 12px; }
+.foot-col a { display: block; text-decoration: none; color: var(--ink); font-size: 17px; line-height: 1.7; position: relative; width: fit-content; }
+.foot-col a .sq { position: absolute; left: 0; right: 0; bottom: 1px; height: 8px; color: var(--squiggle); opacity: 0; transform: translateY(3px); transition: opacity .25s, transform .25s; }
+.foot-col a:hover { color: var(--accent-ink); }
+.foot-col a:hover .sq { opacity: 1; transform: translateY(0); }
+.foot-col-primary a.foot-primary { font-family: var(--font-display); font-weight: var(--display-weight); font-size: clamp(20px,2.2vw,30px); line-height: 1.25; letter-spacing: -.01em; margin-bottom: 4px; }
+.foot-col a.foot-muted { font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em; color: var(--ink-soft); margin-top: 6px; }
+.foot-col a.foot-muted:hover { color: var(--accent); }
+.foot .legal { margin-top: clamp(40px,6vw,80px); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+
+/* ---- reveal ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(22px); }
+  .site[data-loaded] .reveal { opacity: 1; transform: none; transition: opacity .7s ease, transform .8s cubic-bezier(.2,.75,.2,1); }
+  .site[data-loaded] .reveal.d1 { transition-delay: .05s; }
+  .site[data-loaded] .reveal.d2 { transition-delay: .12s; }
+  .site[data-loaded] .reveal.d3 { transition-delay: .2s; }
+  .site[data-loaded] .reveal.d4 { transition-delay: .28s; }
+}
+
+@media (max-width: 720px) {
+  .navlinks .navlink.hide-sm { display: none; }
+}
+
+/* ---- custom pebble cursor (brand salmon) ---- */
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: none; }
+  a, button, [role="button"], .proj, input, textarea, label, .ab-scroll-cue, .ab-client { cursor: none; }
+  #kcursor { position: fixed; top: 0; left: 0; z-index: 999999; pointer-events: none;
+    width: 14px; height: 14px; background: #fa8072;
+    border-radius: 47% 53% 60% 40% / 55% 42% 58% 45%;
+    transition: width .25s ease, height .25s ease, background .25s ease, border-radius .3s ease; will-change: transform; }
+  #kcursor.is-text { background: rgba(250,128,114,.16); border: 1.5px solid #fa8072; border-radius: 100px; }
+}

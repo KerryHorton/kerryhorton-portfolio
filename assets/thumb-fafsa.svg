@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#DCE6F4"></rect>
+  <text x="200" y="150" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="15" letter-spacing="3" fill="#4a5d80">FEDERAL STUDENT AID</text>
+  <text x="200" y="232" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="82" font-weight="700" letter-spacing="2" fill="#20304F">FAFSA</text>
+  <path d="M120 258 Q140 250 160 258 T200 258 T240 258 T280 258" fill="none" stroke="#fa8072" stroke-width="3" stroke-linecap="round"></path>
+  <text x="200" y="300" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="14" letter-spacing="1.5" fill="#4a5d80">Accenture Federal Services</text>
+</svg>

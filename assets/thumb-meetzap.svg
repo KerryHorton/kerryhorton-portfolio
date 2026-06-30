@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#F6C9D9"></rect>
+  <text x="200" y="120" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="14" letter-spacing="3" fill="#8a3a55">COMMUNITY APP</text>
+  <text x="200" y="216" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="60" font-weight="700" fill="#5E1B33">Meetzap</text>
+  <path d="M120 248 Q140 240 160 248 T200 248 T240 248 T280 248" fill="none" stroke="#fa8072" stroke-width="3" stroke-linecap="round"></path>
+  <text x="200" y="292" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="14" letter-spacing="1.5" fill="#6F6660">Design for America</text>
+</svg>

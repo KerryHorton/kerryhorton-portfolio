@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#1A1518"></rect>
+  <g fill="none" stroke="#1ED760" stroke-width="6" stroke-linecap="round">
+    <path d="M150 120 q50 -16 100 0"></path>
+    <path d="M158 142 q42 -13 84 0"></path>
+    <path d="M166 163 q34 -10 68 0"></path>
+  </g>
+  <text x="200" y="248" text-anchor="middle" font-family="Georgia, &#39;Times New Roman&#39;, serif" font-size="62" font-weight="700" fill="#1ED760">Spotify</text>
+  <text x="200" y="300" text-anchor="middle" font-family="&#39;DM Mono&#39;, ui-monospace, monospace" font-size="15" letter-spacing="2.5" fill="#cfe9d8">MUSIC DISCOVERY</text>
+</svg>
