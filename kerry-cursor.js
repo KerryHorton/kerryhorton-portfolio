@@ -13,12 +13,11 @@
     document.body.appendChild(dot);
 
     var mx = window.innerWidth / 2, my = window.innerHeight / 2; // raw pointer
-    var px = mx, py = my;        // lerped follower position
+    var px = mx, py = my;        // rendered dot position (tracks the pointer exactly)
     var scale = 1, sTarget = 1;  // for the scale-down-and-vanish over a circle
     var rot = 0;
     var mode = 'dot';            // 'dot' | 'text' | 'hidden'
     var halo = null;             // {cx, cy} target when over a text link
-    var moved = false;
     var magnetThumb = null;      // currently pulled .thumb element
 
     // Text targets that earn the soft halo: real links + nav headers
@@ -68,8 +67,20 @@
     window.addEventListener('pointermove', function (e) {
       if (e.pointerType && e.pointerType !== 'mouse') return;
       mx = e.clientX; my = e.clientY;
-      if (!moved) { moved = true; dot.style.opacity = ''; }
+      // Unconditional (not gated to "first move only") so the dot also
+      // reappears after being hidden by blur/mouseleave below — otherwise
+      // it stays hidden forever after the first tab-away/back.
+      dot.style.opacity = '';
       var t = e.target;
+      if (t && t.tagName === 'IFRAME') {
+        // Embedded content (e.g. the résumé PDF) is a separate browsing
+        // context: once the pointer is over it we stop getting move events
+        // and its native cursor takes over, so shrink ours away instead of
+        // leaving it frozen at the iframe's edge.
+        clearMagnet();
+        setMode('hidden');
+        return;
+      }
       var proj = t && t.closest ? t.closest('.proj') : null;
       if (proj) { handleProj(proj); return; }
       clearMagnet();
@@ -77,16 +88,17 @@
       if (link) { enterText(link); } else { setMode('dot'); }
     }, { passive: true });
 
-    // Hide when the pointer leaves the window entirely.
+    // Hide when the pointer leaves the window entirely, and restore it as
+    // soon as the tab/window regains focus (don't wait for the next move).
     document.addEventListener('mouseleave', function () { dot.style.opacity = '0'; });
     window.addEventListener('blur', function () { dot.style.opacity = '0'; });
+    window.addEventListener('focus', function () { dot.style.opacity = ''; });
 
     function frame() {
-      var tx, ty, ease;
-      if (mode === 'text' && halo) { tx = halo.cx; ty = halo.cy; ease = 0.28; }
-      else { tx = mx; ty = my; ease = 0.22; }
-      px += (tx - px) * ease;
-      py += (ty - py) * ease;
+      // Position tracks the real pointer (or halo center) exactly, every
+      // frame — no easing toward it, so there's no perceptible lag.
+      if (mode === 'text' && halo) { px = halo.cx; py = halo.cy; }
+      else { px = mx; py = my; }
       scale += (sTarget - scale) * 0.2;
       rot += 0.4;
       var r = (mode === 'text') ? 0 : rot;
