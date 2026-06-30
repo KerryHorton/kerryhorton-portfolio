@@ -190,7 +190,7 @@ window.KERRY_CASES["fafsa"] = {
     { id: "recommendations", title: "Research-to-Design Recommendations", blocks: [
       { type: "p", text: "Based on research findings, I helped shape recommendations across several areas of the FAFSA experience." },
       { type: "irimpact", title: "From finding to shipped change", rows: [
-        { insight: "Users hesitated right before review & signature.", rec: "Add an interstitial that signals what's coming next.", impact: "Reduced uncertainty at the highest-stakes moment." },
+        { insight: "Users hesitated right before review & signature.", rec: "Add an interstitial that signals what's coming next.", impact: "Reduced uncertainty at a high-stake moment." },
         { insight: "Dense review pages undermined confidence.", rec: "Restructure review to be scannable and actionable.", impact: "Easier to confirm the form was complete & accurate." },
         { insight: "Edit affordances were ambiguous.", rec: "Make edit pathways clear and obvious.", impact: "Less friction correcting mistakes." },
         { insight: "Users needed to pause and return.", rec: "Strengthen the Save & Return CTA.", impact: "Supported realistic, multi-session completion." },

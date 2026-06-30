@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kerry — UX Researcher + Strategist</title>
+<link rel="icon" type="image/png" href="/assets/logo-k.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,300..800;1,300..800&family=Hanken+Grotesk:wght@300..800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -419,9 +420,9 @@
   }
 
   /* ---- custom pebble cursor (brand salmon) ---- */
+  /* cursor:none rules disabled along with kerry-cursor.js for testing — the
+     dot-drawing script and the native-cursor-hiding CSS must be toggled together. */
   @media (hover: hover) and (pointer: fine) {
-    body { cursor: none; }
-    a, button, [role="button"], .proj, input, textarea, label, .hp-scroll-cue { cursor: none; }
     #kcursor { position: fixed; top: 0; left: 0; z-index: 999999; pointer-events: none;
       width: 14px; height: 14px; background: #fa8072;
       border-radius: 47% 53% 60% 40% / 55% 42% 58% 45%;
@@ -439,7 +440,7 @@
 
 <script src="image-slot.js"></script>
 <script src="kerry-resume.js"></script>
-<script src="kerry-cursor.js"></script>
+<!-- custom cursor temporarily disabled for testing: <script src="kerry-cursor.js"></script> -->
 <script type="text/babel" src="tweaks-panel.jsx"></script>
 <script type="text/babel" src="kerry-bits.jsx"></script>
 <script type="text/babel" src="kerry-home.jsx"></script>

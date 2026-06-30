@@ -30,7 +30,7 @@ function About() {
 
   return (
     <div className="site" data-loaded={loaded ? "1" : undefined}>
-      <NavBar base="Kerry Homepage.html" active="about" />
+      <NavBar base="index.html" active="about" />
 
       <main className="ab">
         <header className="ab-hero wrap">
@@ -108,7 +108,7 @@ function About() {
         </section>
       </main>
 
-      <FooterContact base="Kerry Homepage.html" />
+      <FooterContact base="index.html" />
     </div>);
 }
 

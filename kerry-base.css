@@ -104,9 +104,9 @@ h1, h2, h3, .display, .ab-cta h2, .brand .word { text-wrap: balance; }
 }
 
 /* ---- custom pebble cursor (brand salmon) ---- */
+/* cursor:none rules disabled along with kerry-cursor.js for testing — the
+   dot-drawing script and the native-cursor-hiding CSS must be toggled together. */
 @media (hover: hover) and (pointer: fine) {
-  body { cursor: none; }
-  a, button, [role="button"], .proj, input, textarea, label, .ab-scroll-cue, .ab-client { cursor: none; }
   #kcursor { position: fixed; top: 0; left: 0; z-index: 999999; pointer-events: none;
     width: 14px; height: 14px; background: #fa8072;
     border-radius: 47% 53% 60% 40% / 55% 42% 58% 45%;

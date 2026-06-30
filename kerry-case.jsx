@@ -200,22 +200,22 @@ function CaseStudy() {
   if (!data) {
     return (
       <div className="site" data-loaded="1">
-        <NavBar base="Kerry Homepage.html" />
+        <NavBar base="index.html" />
         <div className="cs-missing wrap">
           <h1>Project not found</h1>
-          <a href="Kerry Homepage.html#selected-work">← Back to all work</a>
+          <a href="index.html#selected-work">← Back to all work</a>
         </div>
-        <FooterContact base="Kerry Homepage.html" />
+        <FooterContact base="index.html" />
       </div>);
 
   }
 
   return (
     <div className="site" data-loaded={loaded ? "1" : undefined}>
-      <NavBar base="Kerry Homepage.html" active="work" />
+      <NavBar base="index.html" active="work" />
       <article className="cs">
           <header className="cs-hero wrap">
-            <a className="cs-back" href="Kerry Homepage.html#selected-work">← Selected Work</a>
+            <a className="cs-back" href="index.html#selected-work">← Selected Work</a>
             <div className="cs-kicker reveal d1">
               <span className="cs-num">{data.number}</span>{data.kicker}
             </div>
@@ -255,7 +255,7 @@ function CaseStudy() {
 
           <div className="wrap"><NextProject cur={data} /></div>
         </article>
-      <FooterContact base="Kerry Homepage.html" />
+      <FooterContact base="index.html" />
     </div>);
 
 }
