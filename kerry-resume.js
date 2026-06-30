@@ -1,8 +1,12 @@
 /* kerry-resume.js — résumé viewer overlay. Exposes window.openResumeViewer().
    Embeds the résumé PDF with a download button. */
 (function () {
-  var PDF = "assets/Kerry-Horton-Resume.pdf";
+  var PDF = "/assets/kerry_resume.pdf";
   var DOWNLOAD_NAME = "Kerry-Horton-Resume.pdf";
+  // Letter-portrait page in a wider-than-tall panel: "fit page" (the default)
+  // constrains on height and leaves the page small with empty side margins.
+  // FitH fits to width instead, so the resume reads at a legible size.
+  var VIEW_PARAMS = "#toolbar=0&navpanes=0&view=FitH";
 
   function build() {
     if (document.getElementById("kerry-resume")) return;
@@ -27,6 +31,7 @@
       "#kerry-resume iframe{width:100%;height:100%;border:0;display:block}" +
       "#kerry-resume .kr-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:40px;" +
       "font-family:'Hanken Grotesk',sans-serif;color:#6F6660}" +
+      "#kerry-resume .kr-fallback[hidden]{display:none}" +
       "#kerry-resume .kr-fallback .kr-dl{color:#F3EFE8}";
     document.head.appendChild(css);
 
@@ -43,10 +48,14 @@
         '</div>' +
         '<div class="kr-body">' +
           '<div class="kr-fallback">Loading resume\u2026 if it doesn\u2019t appear, <a class="kr-dl" href="' + PDF + '" download="' + DOWNLOAD_NAME + '">download the PDF</a>.</div>' +
-          '<iframe title="Resume" src="' + PDF + '#toolbar=0&navpanes=0"></iframe>' +
+          '<iframe title="Resume"></iframe>' +
         '</div>' +
       '</div>';
     document.body.appendChild(el);
+
+    var iframe = el.querySelector("iframe");
+    var fallback = el.querySelector(".kr-fallback");
+    iframe.addEventListener("load", function () { fallback.hidden = true; });
 
     function close() { el.classList.remove("open"); document.documentElement.style.overflow = ""; }
     el.querySelector(".kr-close").addEventListener("click", close);
@@ -59,6 +68,11 @@
     var el = document.getElementById("kerry-resume") || build();
     el.classList.add("open");
     document.documentElement.style.overflow = "hidden";
+    // Loaded only now, once the panel is laid out at full size — loading it
+    // eagerly at build() time (while still display:none) left the embedded
+    // PDF viewer to fit itself against a ~0px box, rendering tiny forever.
+    var iframe = el.querySelector("iframe");
+    if (!iframe.src) iframe.src = PDF + VIEW_PARAMS;
   };
 
   if (document.body) build();

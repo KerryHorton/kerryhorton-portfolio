@@ -14,7 +14,7 @@ const PUBLIC_PATHS = new Set([
 const RESPONSE_HEADERS = {
   "Referrer-Policy": "no-referrer",
   "X-Content-Type-Options": "nosniff",
-  "X-Frame-Options": "DENY",
+  "X-Frame-Options": "SAMEORIGIN",
   "X-Robots-Tag": "noindex, nofollow"
 };
 
@@ -59,4 +59,3 @@ export default async function portfolioAccess(request) {
 export const config = {
   matcher: "/:path*"
 };
-
