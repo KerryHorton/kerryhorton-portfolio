@@ -3,10 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:observability": "node scripts/build-observability.mjs",
     "local": "vercel dev",
+    "postinstall": "npm run build:observability",
     "test": "node --test"
   },
   "dependencies": {
-    "@vercel/functions": "^3.7.4"
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/functions": "^3.7.4",
+    "@vercel/speed-insights": "^2.0.0"
   }
 }
