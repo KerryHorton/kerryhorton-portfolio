@@ -8,8 +8,16 @@ import {
 const PUBLIC_PATHS = new Set([
   "/gate.html",
   "/kerry-gate.js",
+  "/vercel-observability.js",
+  "/vendor/vercel-analytics.mjs",
+  "/vendor/vercel-speed-insights.mjs",
   "/api/auth"
 ]);
+
+const PUBLIC_PREFIXES = [
+  "/_vercel/insights/",
+  "/_vercel/speed-insights/"
+];
 
 const RESPONSE_HEADERS = {
   "Referrer-Policy": "no-referrer",
@@ -20,7 +28,8 @@ const RESPONSE_HEADERS = {
 
 export default async function portfolioAccess(request) {
   const url = new URL(request.url);
-  const isPublicPath = PUBLIC_PATHS.has(url.pathname);
+  const isPublicPath = PUBLIC_PATHS.has(url.pathname) ||
+    PUBLIC_PREFIXES.some((prefix) => url.pathname.startsWith(prefix));
   const sessionSecret = process.env.PORTFOLIO_SESSION_SECRET;
   const configured = typeof sessionSecret === "string" && sessionSecret.length >= 32;
   const token = readCookie(request.headers.get("cookie"), SESSION_COOKIE);
