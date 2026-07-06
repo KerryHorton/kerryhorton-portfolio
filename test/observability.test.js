@@ -5,7 +5,7 @@ import { readFile } from "node:fs/promises";
 const projectRoot = new URL("../", import.meta.url);
 
 test("public portfolio pages load Vercel observability", async () => {
-  const pages = ["index.html", "About.html", "Case Study.html", "gate.html"];
+  const pages = ["index.html", "About.html", "case-study.html", "gate.html"];
 
   for (const page of pages) {
     const html = await readFile(new URL(page, projectRoot), "utf8");

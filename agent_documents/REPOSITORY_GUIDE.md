@@ -108,7 +108,7 @@ Avoid introducing Next.js-specific imports or assuming a conventional bundler ex
 | `About.html` | About page shell |
 | `kerry-about.jsx` | About page rendering and interactions |
 | `kerry-about.css` | About page styles |
-| `Case Study.html` | Shared case-study shell |
+| `case-study.html` | Shared case-study shell |
 | `kerry-case.jsx` | Dynamic case-study renderer selected by `?p=<slug>` |
 | `kerry-case.css` | Case-study layout and research-diagram styles |
 | `kerry-content-a.jsx` | Case-study content for projects 01–05 |
@@ -139,7 +139,7 @@ The homepage project list lives in `PROJECTS` inside `kerry-home.jsx`. Full proj
 When changing a project slug, title, ordering, or headline metadata, check both locations. A case-study link uses:
 
 ```text
-Case Study.html?p=<project-slug>
+case-study.html?p=<project-slug>
 ```
 
 The case renderer supports paragraphs, subheads, quotes, lists, ordered lists, methods, sample summaries, themes, insight/recommendation/impact tables, journeys, frameworks, and image blocks.

@@ -168,7 +168,7 @@ window.KERRY_CASES["fafsa"] = {
         "Behavioral analysis through tools like Google Analytics and Medallia",
         "Cross-functional synthesis and prioritization",
       ]},
-      { type: "p", text: "Across the work, I tested with more than 70 participants, including diverse user groups such as first-generation students and individuals with disabilities." },
+      { type: "p", text: "Across the work, I tested with more than 70 participants, including diverse user groups such as first-generation college students and individuals with disabilities." },
       { type: "sample", title: "Who we tested with", items: [
         { v: "70+", k: "usability participants across cycles" },
         { v: "17M+", k: "users on the experiences studied" },
@@ -225,12 +225,12 @@ window.KERRY_CASES["mckinsey"] = {
   title: "Redesigning an Internal Workflow Tool for Executive Assistants",
   subtitle: "An enterprise UX research project focused on improving workflow efficiency, usability, and safer tool adoption.",
   intro: [
-    "At McKinsey & Company, I worked as a Senior User Researcher supporting internal tools used across the firm. One of my primary projects focused on improving the experience of Executive Assistants — a critical user group responsible for coordinating complex workflows, managing sensitive information, and supporting teams across a fast-paced consulting environment.",
-    "The existing tool experience was difficult to navigate and did not fully support the way Executive Assistants actually worked. As a result, users had developed their own workarounds, including Excel-based processes, to complete tasks more efficiently. While these workarounds helped users get their work done, they also created inconsistencies, duplicated effort, and potential security risks around sensitive information.",
-    "Our goal was to better understand the Executive Assistant community, identify the biggest workflow and usability pain points, and design a more intuitive future-state tool experience.",
+    "At McKinsey & Company, I worked as a Senior User Researcher supporting internal tools used across the firm. One of my primary projects focused on improving the experience of Executive Assistants (EAs) — a critical user group responsible for coordinating complex workflows, managing sensitive information, and supporting teams across a fast-paced consulting environment.",
+    "The existing tool experience was difficult to navigate and did not fully support the way EAs actually worked. As a result, users had developed their own workarounds, including Excel-based processes, to complete tasks more efficiently. While these workarounds helped users get their work done, they also created inconsistencies, duplicated effort, and potential security risks around sensitive information.",
+    "Our goal was to better understand the EA community, identify the biggest workflow and usability pain points, and design a more intuitive future-state tool experience.",
   ],
   snapshot: {
-    "Client": "Internal workflow tool for McKinsey's Executive Assistant community",
+    "Client": "Internal workflow tool for McKinsey's Executive Assistant (EA) community",
     "Timeline": "July 2022 – March 2023",
     "Role": "Senior User Researcher",
     "Team": "User Research Lead, Software Architect, Product Manager, senior managers, EA users, internal product stakeholders",
@@ -239,7 +239,7 @@ window.KERRY_CASES["mckinsey"] = {
     "Outcome": "A tested interim solution and a development-ready future-state prototype to improve workflow clarity, tool adoption, and safer handling of sensitive information",
   },
   summary: {
-    problem: "Executive Assistants coordinate complex, sensitive workflows \u2014 but the official internal tool didn't match how they actually worked, so they fell back on Excel workarounds that created inconsistency and security risk.",
+    problem: "EAs coordinate complex, sensitive workflows \u2014 but the official internal tool didn't match how they actually worked, so they fell back on Excel workarounds that created inconsistency and security risk.",
     role: "Senior User Researcher",
     timeline: "Jul 2022 \u2013 Mar 2023",
     team: "Research lead, software architect, PM, senior managers & EA users",
@@ -249,12 +249,12 @@ window.KERRY_CASES["mckinsey"] = {
   tags: ["Enterprise UX", "Internal Tools", "UX Research", "Workflow Design", "Executive Assistant Experience", "Usability Testing", "Concept Testing", "Personas", "Journey Mapping", "Figma", "Jira", "Research-to-Design", "Product Strategy"],
   sections: [
     { id: "challenge", title: "The Challenge", blocks: [
-      { type: "p", text: "Executive Assistants play an essential role in keeping internal operations running smoothly. Their work often involves coordinating across people, systems, calendars, documents, and sensitive information." },
-      { type: "p", text: "However, the existing internal tool did not fully align with their day-to-day workflows. Users found parts of the experience difficult to navigate, inefficient, or disconnected from how they actually completed their work. Because the tool was not meeting their needs, many Executive Assistants had created their own informal systems and Excel-based workarounds. This was understandable from a user perspective — but it created a larger business problem." },
-      { type: "quote", text: "How might we design a more intuitive and secure workflow experience that better supports Executive Assistants and reduces reliance on inconsistent workarounds?" },
+      { type: "p", text: "EAs play an essential role in keeping internal operations running smoothly. Their work often involves coordinating across people, systems, calendars, documents, and sensitive information." },
+      { type: "p", text: "However, the existing internal tool did not fully align with their day-to-day workflows. Users found parts of the experience difficult to navigate, inefficient, or disconnected from how they actually completed their work. Because the tool was not meeting their needs, many EAs had created their own informal systems and Excel-based workarounds. This was understandable from a user perspective — but it created a larger business problem." },
+      { type: "quote", text: "How might we design a more intuitive and secure workflow experience that better supports EAs and reduces reliance on inconsistent workarounds?" },
     ]},
     { id: "role", title: "My Role", blocks: [
-      { type: "p", text: "As Senior User Researcher, I supported the project from discovery through future-state design. My role included helping understand the Executive Assistant experience, identifying pain points in the current workflow, synthesizing research into actionable insights, supporting concept testing, conducting usability testing, and translating findings into design recommendations." },
+      { type: "p", text: "As Senior User Researcher, I supported the project from discovery through future-state design. My role included helping understand the EA experience, identifying pain points in the current workflow, synthesizing research into actionable insights, supporting concept testing, conducting usability testing, and translating findings into design recommendations." },
       { type: "p", text: "I also contributed to the creation of personas, journey maps, an interim Excel-based solution, and a high-fidelity Figma prototype that was prepared for development. Because this was an internal enterprise product, the work required balancing user needs with operational realities, technical constraints, stakeholder priorities, and security considerations." },
     ]},
     { id: "approach", title: "Research Approach", blocks: [
@@ -281,7 +281,7 @@ window.KERRY_CASES["mckinsey"] = {
       ]},
     ]},
     { id: "personas", title: "Personas & Journey Mapping", blocks: [
-      { type: "p", text: "To help the team align around the Executive Assistant experience, we developed personas and a journey map that captured key user needs, behaviors, pain points, and workflow stages. These artifacts helped translate research into a shared language for the cross-functional team and made it easier to identify where the current experience broke down." },
+      { type: "p", text: "To help the team align around the EA experience, we developed personas and a journey map that captured key user needs, behaviors, pain points, and workflow stages. These artifacts helped translate research into a shared language for the cross-functional team and made it easier to identify where the current experience broke down." },
       { type: "p", text: "The journey map was especially useful for showing how pain points accumulated across the workflow, rather than appearing as isolated usability issues." },
       { type: "journey", title: "Where friction accumulated across the EA workflow", stages: [
         { phase: "Receive", thought: "\u201cAnother request \u2014 where does this even go?\u201d", opp: "One clear, trusted place to start." },
@@ -329,7 +329,7 @@ window.KERRY_CASES["spotify"] = {
   subtitle: "A sponsored capstone project exploring how Spotify could make music discovery feel more playful, personal, and useful on web.",
   intro: [
     "For my senior capstone, my team worked on a sponsored project focused on Spotify and college students' audio streaming habits.",
-    "The project began with a broad problem space: understanding how college students listen to music, discover new audio, and use Spotify across different contexts. Through exploratory research, personas, journey mapping, concept testing, prototyping, and usability testing, we narrowed the opportunity to music discovery.",
+    "The project began with a broad problem space: understanding how college students listen to music, discover new audio, and use Spotify across different contexts. Through exploratory research, personas, journey mapping, concept testing, prototyping, and usability testing, we narrowed the design opportunity to music discovery.",
     "Our final concept, Discover, was a web-based Spotify experience designed to help users explore music in a more personalized and playful way, then curate playlists that fit their current mood or listening needs.",
   ],
   snapshot: {

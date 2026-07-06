@@ -125,7 +125,7 @@ function HeroB() {
 /* ---------- SELECTED WORK ---------- */
 function ProjRow({ p }) {
   return (
-    <a className="proj" href={"Case Study.html?p=" + p.slug}>
+    <a className="proj" href={"case-study.html?p=" + p.slug}>
       <span className="num">{p.n}</span>
       <span className="body">
         <span className="short">{p.short}<Squiggle className="sq" w={200} h={11} waves={8} /></span>
