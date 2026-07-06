@@ -372,7 +372,7 @@ window.KERRY_CASES["first-plate"] = {
   title: "Building a Wholesale Biscotti Brand for Portland Coffeehouses",
   subtitle: "An early entrepreneurship, customer experience, and brand design project.",
   intro: [
-    "First Plate LLC was a small food business I founded to produce and wholesale Italian biscotti to independent coffeehouses in the Portland metro area.",
+    "First Plate LLC was a small food business I founded to produce and wholesale Italian biscotti for independent coffeehouses in the Portland metro area.",
     "What started as a creative project during high school became my first real experience identifying a customer need, validating demand, developing a product, building business relationships, and creating a brand experience from the ground up.",
   ],
   snapshot: {
@@ -423,7 +423,7 @@ window.KERRY_CASES["first-plate"] = {
       { type: "image", caption: "Staged product photography and a warm, simple brand presence reflected the handmade quality of the product." },
     ]},
     { id: "cx", title: "Customer Experience", blocks: [
-      { type: "p", text: "Looking back, what I cared about most was not just selling biscotti. It was creating a good experience for everyone involved. For coffeehouse owners, that meant offering a product that was easy to order, reliable in quality, and aligned with the atmosphere of their shops. For customers, that meant creating something that felt like a small but memorable part of their coffee ritual. For me, it meant building real relationships with local business owners, learning how to present myself professionally, and understanding how much trust matters when someone chooses to carry your product." },
+      { type: "p", text: "Looking back, what I cared about most was not just selling biscotti, it was creating a good experience for everyone involved. For coffeehouse owners, that meant offering a product that was easy to order, reliable in quality, and aligned with the atmosphere of their shops. For customers, that meant creating something that felt like a small but memorable part of their coffee ritual. For me, it meant building real relationships with local business owners, learning how to present myself professionally, and understanding how much trust matters when someone chooses to carry your product." },
     ]},
     { id: "reflection", title: "Reflection", blocks: [
       { type: "p", text: "I closed First Plate before leaving for college. By that point, I had become deeply attached to the product, the customers, and the relationships I had built. While closing the business was bittersweet, it felt like the right decision. First Plate had served its purpose: it gave me my first experience building something from scratch, bringing it into the world, and learning what it takes to make an idea real." },
@@ -436,7 +436,6 @@ window.KERRY_CASES["first-plate"] = {
 // ABOUT
 // ─────────────────────────────────────────────────────────────────
 window.KERRY_ABOUT = {
-  intro: "I'm a UX Researcher and Strategist with 4+ years of experience helping teams understand people, untangle messy problems, and make better product, brand, and customer experience decisions.",
   paras: [
     "My background is in human-centered design and consumer insights research.",
     "UX has always felt like a natural fit for me because it sits in the middle of a few things I care about: design, psychology, communication, and strategy. It gives me a way to be creative and analytical at the same time, while staying close to how people actually think, feel, and make decisions.",

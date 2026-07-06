@@ -92,7 +92,7 @@ function FooterContact({ base = "" }) {
           <div className="lab">Get in touch</div>
           <a href="mailto:kerryhorton3@gmail.com">kerryhorton3@gmail.com<Squiggle className="sq" w={200} h={8} waves={7} /></a>
           <a href="https://www.linkedin.com/in/kerry-horton/" target="_blank" rel="noopener">LinkedIn<Squiggle className="sq" w={70} h={8} waves={4} /></a>
-          <a className="foot-muted" href="https://calendly.com/kerryhorton/coffee-chat" target="_blank" rel="noopener">Or book a coffee chat ↗</a>
+          <a className="foot-muted" href="https://calendly.com/kerryhorton/coffee-chat" target="_blank" rel="noopener">Book a coffee chat ↗</a>
         </div>
         <div className="foot-col">
           <div className="lab">Resume</div>

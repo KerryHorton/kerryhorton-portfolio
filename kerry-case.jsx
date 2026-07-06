@@ -170,7 +170,7 @@ function NextProject({ cur }) {
   const slugs = Object.keys(KERRY_CASES);
   const next = KERRY_CASES[slugs[(slugs.indexOf(cur.slug) + 1) % slugs.length]];
   return (
-    <a className="cs-next" href={"Case Study.html?p=" + next.slug}>
+    <a className="cs-next" href={"case-study.html?p=" + next.slug}>
       <span className="cs-next-lab">Next project</span>
       <span className="cs-next-title">{next.short || next.title}<Squiggle className="sq" w={200} h={12} waves={8} /></span>
       <span className="cs-next-arr">→</span>

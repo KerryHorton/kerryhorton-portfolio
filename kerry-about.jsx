@@ -40,7 +40,7 @@ function About() {
               <span className="ln" style={{ fontSize: "97px", lineHeight: "0.95" }}>a little bit</span>
               <span className="ln" style={{ fontSize: "97px", lineHeight: "0.95" }}>more <em style={{ fontSize: "97px" }}>about&nbsp;me</em><span className="dot" style={{ fontSize: "97px" }}>.</span></span>
             </h1>
-            <p className="ab-manifesto-lead reveal d3">{a.intro} I work where research meets strategy - close to how people actually think, feel, and choose.</p>
+            <p className="ab-manifesto-lead reveal d3">I'm a <strong>UX Researcher &amp; Strategist</strong> with <strong>4+ years</strong> of experience helping teams understand people, untangle messy problems, and make better product, brand, and customer experience decisions. I work where research meets strategy - evaluating how people think, feel and choose to enable businesses to more effectively understand, serve and satisfy their customers. </p>
           </div>
           <div className="ab-hero-mark reveal d4">
             <span className="ab-mark-ring salmon" aria-hidden="true" />
@@ -92,7 +92,7 @@ function About() {
 
         <div className="ab-clients wrap">
           <div className="ab-meta-lab">Selected clients & teams</div>
-          <div className="ab-clients-list">{a.clients.map((c, i) => <a className="ab-client" href={"Case Study.html?p=" + c.slug} key={i}>{c.name}<span className="ab-client-arr">↗</span></a>)}</div>
+          <div className="ab-clients-list">{a.clients.map((c, i) => <a className="ab-client" href={"case-study.html?p=" + c.slug} key={i}>{c.name}<span className="ab-client-arr">↗</span></a>)}</div>
         </div>
 
         <section className="ab-cta wrap">
